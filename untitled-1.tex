@@ -1,41 +1,143 @@
 \documentclass[11pt]{article} %Sets the default text size to 11pt and class to article.
-\usepackage{hyperref}
+\usepackage{hyperref,multicol,changepage,tabularx}
 %------------------------Dimensions--------------------------------------------
-\topmargin=0.0in %length of margin at the top of the page (1 inch added by default)
-\oddsidemargin=0.0in %length of margin on sides for odd pages
-\evensidemargin=0in %length of margin on sides for even pages
-\textwidth=6.5in %How wide you want your text to be
+\topmargin=-0.5in %length of margin at the top of the page (1 inch added by default)
+\oddsidemargin=-0.5in %length of margin on sides for odd pages
+\evensidemargin=0.0in %length of margin on sides for even pages
+\textwidth=7.5in %How wide you want your text to be
 \marginparwidth=0.5in
 \headheight=0pt %1in margins at top and bottom (1 inch is added to this value by default)
 \headsep=0pt %Increase to increase white space in between headers and the top of the page
-\textheight=9.0in %How tall the text body is allowed to be on each page
+\textheight=10.2in %How tall the text body is allowed to be on each page
 \begin{document}
 %------------------------Header--------------------------------------------
-\centerline{\Large \bf Kevin Qin} %Makes whatever text you put in parenthesis move to the center
-\centerline{10400 Vineyard Ln Apt333 $\bullet$ Fairfax,VA,22030 $\bullet$ (215) 917-0623}
-\centerline{Email: \href{mailto:kq7726@gmail.com}{kq7726@gmail.com} $\bullet$ Website: \href{http://www.kevinq.me}{www.kevinq.me}}
-\noindent\hrulefill\\
+\noindent{10400 Vineyard Lane}\hfill{Phone:(215) 917-0623}\\
+\noindent{Fairfax,VA,22030}\hfill{\huge \bf Kevin Qin}\hfill{Email: \href{mailto:kq7726@gmail.com}{kq7726@gmail.com}}\\
+\noindent{United States}\hfill{Website:\href{http://www.kevinq.me}{www.kevinq.me}}\\
+\noindent
+%\centerline{\LARGE \textbf Kevin Qin} %Makes whatever text you put in parenthesis move to the center
+%\centerline{10400 Vineyard Ln Apt333 $\bullet$ Fairfax,VA,22030 $\bullet$ (215) 917-0623}
+%\centerline{Email: \href{mailto:kq7726@gmail.com}{kq7726@gmail.com} $\bullet$ Website: %\href{http://www.kevinq.me}{www.kevinq.me}}
 \smallskip\\
-%------------------------Objective--------------------------------------------
-\noindent {\Large \bf Objective} \\%dont indent this line and make it bold and large
-\smallskip\\ %This creates a small gap but not quite as large as a return (its a space saver)
-\noindent\\ %This is to make the following text not indented
-%Here is where you would put your text. In order for the \noindent to take effect your text must be directly below the command. There cannot be a line gap between the command and your text (shown in picture below) 
-\bigskip\\ %This makes a large line skip (\smallskip is also a command but has a smaller gap
-\noindent{\Large \bf Executive Summary}
-\smallskip\\
-\noindent Can Program in a large variety of languages including: \\ %The \\ is the same as a return
-\centerline{$\bullet$ C $\bullet$ Java $\bullet$ Ruby}\\
-\centerline{\hfill $\bullet$ Bash \hfill $\bullet$ PHP \hfill}\\
-Proficeint with the following engineering applications: \\
-\centerline{\hfill $\bullet$ MatLab \hfill $\bullet$ Solid Works \hfill $\bullet$ EES \hfill}\\
-\noindent{\Large \bf Professional Experience}\\
 \smallskip
-\noindent{\bf Laboratory for Atmospheric and Space Physics \hfill 2011 Present\\}
-\indent$\bullet$ Mission Operations and Subsystem Analysis\\
-$\bullet$ Analysis of the SORCE and AIM Power Subsystems\\
-$\bullet$ Analysis of the TIM SORCE Instrument and QSCAT Scatterometer\\
-\bigskip
+\noindent{WORK EXPERIENCE}\hrule
+\smallskip
+\noindent\textbf{ Software Developer\hfill International Baccalaureate\hfill July 2012 - Present}\\
+\indent\textit{Application Development}\\
+\indent{$\bullet$Build XSLT and XQUERY into production workflow.}\\ 
+\indent{$\bullet$Work under MVC on e-commerce system.}\\
+\indent{$\bullet$Contribute to Production Tracking System based on Ruby on Rails.}\\
+\indent\textit{Research and Development}\\
+\indent{$\bullet$Maintain XML-based tool-chain for generating online products.}\\
+\indent{$\bullet$Research on open source tools to improve production workflow.(Git,OJS,exist-db)}\\
+\smallskip
+\noindent\textbf{ Software Developer(Part-time)\hfill St. Joseph's University,PA\hfill Aug 2011 - May 2012}\\
+\indent{$\bullet$Contribute to the new university Content Management System.}\\
+\indent{$\bullet$Write SQL Queries to fetch data for each department.}\\
+\indent{$\bullet$Link/Update the database via Google’s API.}\\
+\smallskip
+\noindent\textbf{ Teaching Assistant\hfill St. Joseph's University,PA\hfill Dec 2010 - May 2012}\\
+\indent{$\bullet$Teach undergraduate student Java programming labs.}\\
+\indent{$\bullet$Tutor undergraduate student Java, Data Structure, etc.}\\
+\indent{$\bullet$Tutor student Web Technologies \& Web Application(Apache + PHP + MySQL)}\\
+\smallskip
+\noindent\textbf{ Tele-research center staff (Part-time)\hfill St. Joseph's University,PA\hfill Dec 2010 - May2012}\\
+\indent\textit{Help the research work on marketing major.}\\
+\smallskip
+\noindent\textbf{ Summer Internship\hfill Nanjing Univ.(Information of Sci\&Tech)\hfill Jun 2011 - Sept 2011}\\
+\indent\textit{Develop computer programs using JAVA, VB.net, to solve diagnostic problems in academic management.}\\
+\smallskip
+\noindent\textbf{ GIS Developer(Part-time)\hfill Nanjing Univ.(Information of Sci\&Tech)\hfill Jan 2007 - May 2010}\\
+\indent\textit{Spatial-Database $\bullet$ESRI $\bullet$ArcGIS Engine $\bullet$GIS Analysis System development.}\\
+%------------------------Education--------------------------------------------
+\smallskip
+\noindent{EDUCATION}\hrule
+\smallskip
+\noindent \textbf{ Saint Joseph's University, Philadelphia, PA\hfill September 2010 - May 2012}
+\begin{adjustwidth}{2em}{2em}
+{$\bullet$ M.S. in Computer and Information Science, May2012. GPA:3.76/4.00}\\
+{$\bullet$ Relevant Coursework: Object-Oriented Design and Data Structures, Theory of Computation, Design and Analysis of Algorithms, Computer Architecture, Software Engineering, Computer Systems, Database Management, Web Technologies, Internet Application Development, Advanced Database Management.}
+\end{adjustwidth}
+\smallskip
+\noindent \textbf{ Nanjing University of Information Sci\&Tech ,China\hfill September 2010 - May 2012}\\
+\indent{$\bullet$ B.S. in Geographic Information Systems, June2010. GPA: 3.55/4.00}\\
+%---------------------TECHNICALSKILLS--------------------------------------------
+\smallskip
+\noindent{TECHNICAL SKILLS}\hrule
+%\smallskip
+%\noindent \textbf{ Programming Languages:}
+%{JAVA$\bullet$J2SE$\bullet$Javascript $\bullet$PHP$\bullet$Ruby $\bullet$Ruby on Rails$\bullet$SQL$\bullet$PL/SQL$\bullet$VB/VB.net$\bullet$Shell Programming(Bash).}\\
+%\noindent \textbf{ Operating System:}
+%{Linux/Unix (Ubuntu server$\bullet$Redhat$\bullet$Fedora17)$\bullet$MacOS$\bullet$Windows.}\\
+%\noindent \textbf{ Database:}
+%{Oracle 10g/11g$\bullet$JDBC3.0$\bullet$MySQL$\bullet$Exist-db$\bullet$PostgreSQL.}\\
+%\noindent \textbf{ Web Technologies:}
+{%Ruby on Rails$\bullet$PHP$\bullet$XML$\bullet$DTD$\bullet$XSLT$\bullet$XQuery/XPath}{$\bullet$SAX$\bullet$DOM}
+%{$\bullet$HTML/XHTML$\bullet$CSS}\\{Javascript$\bullet$Ajax$\bullet$Dojo$\bullet$JQuery.}\\
+%\noindent \textbf{ Web Server/Tools:}
+%{Apache$\bullet$Tomcat$\bullet$Eclipse$\bullet$X-code$\bullet$Sublime-Text2$\bullet$Oxygen-Editor.}\\
+%\noindent \textbf{ Platform/ Cloud Service:}
+%{Amazon Web Service(EC2$\bullet$S3$\bullet$CloudFront)}{$\bullet$Heroku$\bullet$Github$\bullet$Basecamp$\bullet$Drupal.}\\
+\begin{table}[!ht]
+    \begin{adjustwidth}{-0.5em}{-0.5em}\begin{tabular}{p{.3\textwidth}p{.65\textwidth}}
+        \textbf{ Programming Languages:} & 
+{JAVA $\bullet$ J2SE $\bullet$ Javascript $\bullet$ PHP $\bullet$ Ruby $\bullet$ RubyonRails $\bullet$ SQL $\bullet$ PL/SQL $\bullet$ VB/VB.net $\bullet$ Shell Programming(Bash).}\\ 
+        \textbf{ Operating System:}           
+& {Linux/Unix (Ubuntu server $\bullet$ Redhat $\bullet$ Fedora17) $\bullet$ MacOS $\bullet$ Windows.}\\ 
+        \textbf{ Database:}&
+{Oracle 10g/11g $\bullet$ JDBC3.0 $\bullet$ MySQL $\bullet$ Exist-db $\bullet$ PostgreSQL.}\\
+        \textbf{ Web Technologies:}&
+{Ruby on Rails $\bullet$ PHP $\bullet$ XML $\bullet$ DTD $\bullet$ XSLT $\bullet$ XQuery/XPath $\bullet$ SAX $\bullet$ DOM $\bullet$ HTML/XHTML $\bullet$ CSS $\bullet$ Javascript $\bullet$ Ajax $\bullet$ Dojo $\bullet$ JQuery.}\\ 
+        \textbf{ Web Server/Tools:}&
+{Apache $\bullet$ Tomcat $\bullet$ Eclipse $\bullet$ X-code $\bullet$ Sublime-Text2 $\bullet$ Oxygen-Editor.}\\ 
+        \textbf{ Platform/ Cloud Service:}&
+{AWS(EC2 $\bullet$ S3 $\bullet$ CloudFront)}{$\bullet$ Heroku $\bullet$ Github $\bullet$ Basecamp $\bullet$ Drupal.}
+    \end{tabular}\end{adjustwidth}
+\end{table}
+%--------------------RELEVANTPROJECTS--------------------------------------------
+\noindent{RELEVANT PROJECTS}\hrule
+\smallskip
+\noindent\textbf{ E-Commerce Developing (2011).}
+{An eBay-like online shopping system where multiple users can sell and buy products online. Give customers the” best” advice by data-mining functionality. PHP, PL/SQL,XML .}\\
+\smallskip
+\noindent\textbf{ Yummy Reservation System (2011).}
+{Location-based Restaurant Reservation System. RDBMS, SQL.}\\
+\smallskip
+\noindent\textbf{ Production Tracking System (2012).}
+{Application to control the production workflow, allowing administrators to manage/edit the upcoming tasks. MVC, Ruby on Rails, Bootstrap, Javascripts, XML. }\\
+
+%--------------------HONORS/AWARDS--------------------------------------------
+\smallskip
+\noindent{HONORS/AWARDS}\hrule
+\smallskip
+\indent{$\bullet$Upsilon Pi Epsilon (UPE) Chapter Officer}\\
+\indent{$\bullet$Awarded University Scholarship to attend SJU based on excellent grades and work ethics}\\
+\indent{$\bullet$Outstanding Graduate Award (2010)}\\
+\indent{$\bullet$Fellowship for year of 2006,2008,2009}\\
+%--------------------REFERENCE--------------------------------------------
+\smallskip
+\noindent\textit{(Reference available upon request)}
+
+%------------------------Objective--------------------------------------------
+% \noindent {\Large \textbf Objective} \\%dont indent this line and make it bold and large
+%\smallskip\\ %This creates a small gap but not quite as large as a return (its a space saver)
+%\noindent\\ %This is to make the following text not indented
+%Here is where you would put your text. In order for the \noindent to take effect your text must be directly below the command. There cannot be a line gap between the command and your text (shown in picture below) 
+%\bigskip\\ %This makes a large line skip (\smallskip is also a command but has a smaller gap
+%\noindent{\Large \textbf Executive Summary}
+%\smallskip\\
+%\noindent Can Program in a large variety of languages including: \\ %The \\ is the same as a return
+%\centerline{$\bullet$ C $\bullet$ Java $\bullet$ Ruby}\\
+%\centerline{\hfill $\bullet$ Bash \hfill $\bullet$ PHP \hfill}\\
+%Proficeint with the following engineering applications: \\
+%\centerline{\hfill $\bullet$ MatLab \hfill $\bullet$ Solid Works \hfill $\bullet$ EES \hfill}\\
+%\noindent{\Large \textbf Professional Experience}\\
+%\smallskip
+%\noindent\textbf{ Laboratory for Atmospheric and Space Physics \hfill 2011 Present\\}
+%\indent$\bullet$ Mission Operations and Subsystem Analysis\\
+%$\bullet$ Analysis of the SORCE and AIM Power Subsystems\\
+%$\bullet$ Analysis of the TIM SORCE Instrument and QSCAT Scatterometer\\
+%\bigskip
 %Here is again where you would put your text (again directly below the \noindent command)
 \end{document}
 %These two pieces of code tell LaTeX that everything that goes in between these tags is what you want displayed as your actual document.
